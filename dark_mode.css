@@ -1,0 +1,146 @@
+/* Hoja de estilos de modo oscuro usado en estos programas */
+
+/* Estilos generales para el modo oscuro */
+QWidget {
+    background-color: #333; /* Color de fondo principal */
+    color: #FFF; /* Color de texto principal */
+}
+
+QLabel {
+    color: #FFF; /* Color de texto para etiquetas */
+}
+
+QPushButton {
+    background-color: #444; /* Color de fondo para botones */
+    color: #FFF; /* Color de texto para botones */
+    border: 1px solid #555; /* Borde de botones */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+/* Cambiar el color de fondo de los botones cuando se presionan */
+QPushButton:pressed {
+    background-color: #666;
+}
+
+/* Cambiar el color de fondo de los botones cuando se pasan por encima */
+QPushButton:hover {
+    background-color: #555;
+}
+
+/* Cambiar el color de fondo de los botones cuando están deshabilitados */
+QPushButton:disabled {
+    background-color: #888;
+    color: #AAA;
+}
+
+/* Estilos para barras de desplazamiento */
+QScrollBar:vertical {
+    border: 1px solid #555; /* Borde de la barra de desplazamiento vertical */
+    background: #333; /* Color de fondo de la barra de desplazamiento vertical */
+    width: 12px; /* Ancho de la barra de desplazamiento vertical */
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #555; /* Color de fondo del mango de la barra de desplazamiento vertical */
+    min-height: 20px; /* Altura mínima del mango de la barra de desplazamiento vertical */
+    border-radius: 6px; /* Bordes redondeados del mango de la barra de desplazamiento vertical */
+}
+
+QScrollBar::add-line:vertical {
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+/* Cambiar el color de fondo del campo de texto (QLineEdit) */
+QLineEdit {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Cambiar el color de fondo del campo de texto (QTextEdit) */
+QTextEdit {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Cambiar el color de fondo de las áreas de texto (QPlainTextEdit) */
+QPlainTextEdit {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Cambiar el color de fondo de las casillas de verificación (QCheckBox) */
+QCheckBox::indicator {
+    background-color: #444;
+    border: 1px solid #555;
+    width: 15px;
+    height: 15px;
+}
+
+/* Cambiar el color de fondo de los botones de radio (QRadioButton) */
+QRadioButton::indicator {
+    background-color: #444;
+    border: 1px solid #555;
+    width: 15px;
+    height: 15px;
+}
+
+/* Cambiar el color de fondo de las barras de progreso (QProgressBar) */
+QProgressBar {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Cambiar el color de fondo de los menús emergentes (QMenu) */
+QMenu {
+    background-color: #333;
+    color: #FFF;
+    border: 1px solid #555;
+}
+
+/* Cambiar el color de fondo de los elementos de menú (QMenuItem) */
+QMenu::item {
+    background-color: transparent;
+}
+
+/* Cambiar el color de fondo de los elementos de menú cuando se pasan por encima */
+QMenu::item:selected {
+    background-color: #555;
+}
+
+/* Cambiar el color de fondo de las barras de menú (QMenuBar) */
+QMenuBar {
+    background-color: #333;
+    color: #FFF;
+}
+
+/* Cambiar el color de fondo de los elementos de barra de menú (QMenuBarItem) */
+QMenuBar::item {
+    background-color: transparent;
+}
+
+/* Cambiar el color de fondo de los elementos de barra de menú cuando se pasan por encima */
+QMenuBar::item:selected {
+    background-color: #555;
+}
