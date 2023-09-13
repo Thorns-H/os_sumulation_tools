@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Estilos generales para el modo oscuro */
+QWidget {
+    background-color: #333; /* Color de fondo principal */
+    color: #FFF; /* Color de texto principal */
+}
+
+QLabel {
+    color: #FFF; /* Color de texto para etiquetas */
+}
+
+QPushButton {
+    background-color: #444; /* Color de fondo para botones */
+    color: #FFF; /* Color de texto para botones */
+    border: 1px solid #555; /* Borde de botones */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+/* Cambiar el color de fondo de los botones cuando se presionan */
+QPushButton:pressed {
+    background-color: #666;
+}
+
+/* Cambiar el color de fondo de los botones cuando se pasan por encima */
+QPushButton:hover {
+    background-color: #555;
+}
+
+/* Cambiar el color de fondo de los botones cuando están deshabilitados */
+QPushButton:disabled {
+    background-color: #888;
+    color: #AAA;
+}
+
+/* Estilos para barras de desplazamiento */
+QScrollBar:vertical {
+    border: 1px solid #555; /* Borde de la barra de desplazamiento vertical */
+    background: #333; /* Color de fondo de la barra de desplazamiento vertical */
+    width: 12px; /* Ancho de la barra de desplazamiento vertical */
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #555; /* Color de fondo del mango de la barra de desplazamiento vertical */
+    min-height: 20px; /* Altura mínima del mango de la barra de desplazamiento vertical */
+    border-radius: 6px; /* Bordes redondeados del mango de la barra de desplazamiento vertical */
+}
+
+QScrollBar::add-line:vertical {
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+/* Cambiar el color de fondo del campo de texto (QLineEdit) */
+QLineEdit {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Cambiar el color de fondo del campo de texto (QTextEdit) */
+QTextEdit {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Cambiar el color de fondo de las áreas de texto (QPlainTextEdit) */
+QPlainTextEdit {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* Cambiar el color de fondo de las casillas de verificación (QCheckBox) */
+QCheckBox::indicator {
+    background-color: #444;
+    border: 1px solid #555;
+    width: 15px;
+    height: 15px;
+}
+
+/* Cambiar el color de fondo de los botones de radio (QRadioButton) */
+QRadioButton::indicator {
+    background-color: #444;
+    border: 1px solid #555;
+    width: 15px;
+    height: 15px;
+}
+
+/* Cambiar el color de fondo de las barras de progreso (QProgressBar) */
+QProgressBar {
+    background-color: #444;
+    color: #FFF;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Cambiar el color de fondo de los menús emergentes (QMenu) */
+QMenu {
+    background-color: #333;
+    color: #FFF;
+    border: 1px solid #555;
+}
+
+/* Cambiar el color de fondo de los elementos de menú (QMenuItem) */
+QMenu::item {
+    background-color: transparent;
+}
+
+/* Cambiar el color de fondo de los elementos de menú cuando se pasan por encima */
+QMenu::item:selected {
+    background-color: #555;
+}
+
+/* Cambiar el color de fondo de las barras de menú (QMenuBar) */
+QMenuBar {
+    background-color: #333;
+    color: #FFF;
+}
+
+/* Cambiar el color de fondo de los elementos de barra de menú (QMenuBarItem) */
+QMenuBar::item {
+    background-color: transparent;
+}
+
+/* Cambiar el color de fondo de los elementos de barra de menú cuando se pasan por encima */
+QMenuBar::item:selected {
+    background-color: #555;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="F">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>58</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="A">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>58</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="E">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>58</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="C">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>58</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="D">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>58</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="B">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>58</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>47</x>
+      <y>36</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>36</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process B</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>36</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process C</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>36</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process D</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>36</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process E</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>36</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Process F</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="batch_button">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>470</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Batch Processing</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="first_batch_container">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>621</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QProgressBar" name="first_bar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>541</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="second_bar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>541</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="third_bar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>541</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>First Batch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>A</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>B</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="multi_processing_button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>470</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Multiprocessing</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="second_batch_container">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>621</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QProgressBar" name="fourth_bar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>541</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="sixth_bar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>541</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="fifth_bar">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>541</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Second Batch</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>D</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>80</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>E</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>F</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>702</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
