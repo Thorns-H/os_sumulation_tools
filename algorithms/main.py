@@ -11,8 +11,12 @@ from includes.core_progress_bars_threads import *
 from includes.info_threads import *
 from includes.process_threads import *
 from includes.fcfs_thread import *
+from includes.rr_thread import *
+
 
 import random
+import sys
+import os
 
 """
 Esta es la clase principal de la ventana donde se muestran los procesos, a lo largo del codigo se va a documentar esta
@@ -186,21 +190,39 @@ class process_manager(QMainWindow):
         for thread in threads:
             thread.terminate()
 
+        # Ordenamos por el tiempo de llegada al proceso.
+
         self.processes = sorted(self.processes, key = lambda time: int(time[4].text()))
+
+        # Creamos el hilo que se encarga de los procesos.
 
         thread = fcfs_thread(self.processes)
         thread.update_signal.connect(self.update_process_thread_fcfs)
         threads.append(thread)
         thread.start()
 
+    # Método encargado de actualizar las barras.
+
     def update_process_thread_fcfs(self, index: int, value: int) -> None:
         self.processes[index][3].setValue(value)
 
-    def simulate_processes_rr(self) -> None:
-        ...
+    # Método encargado de hacer la planificacion por el método round robin.
 
-    def update_process_thread_rr(self) -> None:
-        ...
+    def simulate_processes_rr(self, quantum: int) -> None:
+        for thread in threads:
+            thread.terminate()
+
+        # Creamos el hilo que se encarga de los procesos.
+
+        thread = rr_thread(self.processes, quantum)
+        thread.update_signal.connect(self.update_process_thread_rr)
+        threads.append(thread)
+        thread.start()
+
+    # Método encargado de actualizar las barras.
+
+    def update_process_thread_rr(self, index: int, value: int) -> None:
+        self.processes[index][3].setValue(value)
             
     """
     Este apartado es para el funcionamiento del prompt, donde ingresamos los comandos para interactuar con los procesos,
@@ -214,7 +236,7 @@ class process_manager(QMainWindow):
 
         integer_value = False
 
-        if tokens[0] in ('normal', 'fcfs', 'rr'):
+        if tokens[0] in ('normal', 'fcfs', 'rr', 'restart', 'exit'):
 
             mode = tokens[0]
 
@@ -225,6 +247,10 @@ class process_manager(QMainWindow):
                 self.simulate_processes_fcfs()
             elif mode == 'rr':
                 self.simulate_processes_rr(int(tokens[1]))
+            elif mode == 'restart':
+                restart_application()
+            elif mode == 'exit':
+                self.close()
 
             self.prompt.clear()
             return
@@ -273,7 +299,16 @@ class process_manager(QMainWindow):
         for thread in core_threads + info_threads + threads:
             thread.terminate()
 
+# Método encargado de reiniciar la aplicacion para hacer pruebas.
+
+def restart_application():
+    app.quit()
+    python = sys.executable
+    os.execl(python, python, *sys.argv)
+
 def main() -> None:
+
+    global app 
 
     app = QApplication([])
 
