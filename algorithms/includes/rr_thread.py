@@ -12,16 +12,19 @@ class rr_thread(QThread):
 
     # Constructor de la clase.
 
-    def __init__(self, processes: tuple) -> None:
+    def __init__(self, processes: tuple, quantum: int) -> None:
         super().__init__()
         self.processes = processes
+        self.last = [0]
+        self.quantum = quantum
 
-    def run(self) -> None:
-        for index, process in enumerate(self.processes):
+    def rr(self) -> None:
 
-            state = process[2]
+        for index in range(len(self.processes)):
 
-            for i in range (1, 101):
+            state = self.processes[index][2]
+
+            for i in range(self.last[0] + 1, self.last[0] + self.quantum + 1):
 
                 if 1 <= i < 20:
                     state.setText('Initializing...')
@@ -38,3 +41,13 @@ class rr_thread(QThread):
 
                 self.update_signal.emit(index, i)
                 time.sleep(0.009)
+
+        self.last[0] += self.quantum
+
+    def run(self) -> None:
+        while self.last[0] < 100:
+            if self.last[0] >= 90:
+                self.quantum = 100 - self.last[0]
+                self.rr()
+            else:
+                self.rr()
