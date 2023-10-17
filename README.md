@@ -18,7 +18,7 @@ These programs are made and tested in Linux, I have not checked the portability 
 
 ## Preview
 <p align="center">
-  <img src="https://i.ibb.co/9gx0Sd3/Captura-de-pantalla-de-2023-09-12-22-39-22.png"/>
+  <img src="https://i.ibb.co/1TXRsJB/new.png"/>
 </p>
 
 **ⓘ Important:** <br />
