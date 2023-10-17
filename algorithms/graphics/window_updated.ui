@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>944</width>
+    <width>1257</width>
     <height>641</height>
    </rect>
   </property>
@@ -439,7 +439,7 @@ QMenuBar::item:selected {
      <rect>
       <x>10</x>
       <y>210</y>
-      <width>921</width>
+      <width>1231</width>
       <height>341</height>
      </rect>
     </property>
@@ -496,7 +496,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>90</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -510,6 +510,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_1">
@@ -517,7 +520,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>120</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -531,6 +534,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_2">
@@ -538,7 +544,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>150</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -552,6 +558,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_3">
@@ -559,7 +568,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>180</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -573,6 +582,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_4">
@@ -580,7 +592,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>210</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -594,6 +606,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_5">
@@ -601,7 +616,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>240</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -615,6 +630,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_6">
@@ -622,7 +640,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>270</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -636,6 +654,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="token_7">
@@ -643,7 +664,7 @@ QMenuBar::item:selected {
       <rect>
        <x>20</x>
        <y>300</y>
-       <width>41</width>
+       <width>31</width>
        <height>21</height>
       </rect>
      </property>
@@ -658,13 +679,16 @@ QMenuBar::item:selected {
      <property name="text">
       <string>0</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_label">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>50</y>
-       <width>61</width>
+       <width>51</width>
        <height>31</height>
       </rect>
      </property>
@@ -683,7 +707,7 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="user_0">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>90</y>
        <width>51</width>
        <height>21</height>
@@ -700,11 +724,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_1">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>120</y>
        <width>51</width>
        <height>21</height>
@@ -721,11 +748,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_2">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>150</y>
        <width>51</width>
        <height>21</height>
@@ -742,11 +772,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_3">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>180</y>
        <width>51</width>
        <height>21</height>
@@ -763,11 +796,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_4">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>210</y>
        <width>51</width>
        <height>21</height>
@@ -784,11 +820,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_5">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>240</y>
        <width>51</width>
        <height>21</height>
@@ -805,11 +844,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_6">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>270</y>
        <width>51</width>
        <height>21</height>
@@ -826,11 +868,14 @@ QMenuBar::item:selected {
      <property name="text">
       <string>root</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
     <widget class="QLabel" name="user_7">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>300</y>
        <width>51</width>
        <height>21</height>
@@ -846,6 +891,9 @@ QMenuBar::item:selected {
      </property>
      <property name="text">
       <string>root</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="state_label">
@@ -1192,9 +1240,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="arrive_label">
      <property name="geometry">
       <rect>
-       <x>790</x>
+       <x>800</x>
        <y>50</y>
-       <width>111</width>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
@@ -1228,7 +1276,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1252,7 +1300,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1276,7 +1324,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1300,7 +1348,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1324,7 +1372,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1348,7 +1396,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1372,7 +1420,7 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1396,7 +1444,458 @@ QMenuBar::item:selected {
       </font>
      </property>
      <property name="text">
-      <string>Time</string>
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_label">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>50</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Priority</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_0">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>90</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_1">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>120</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_2">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>150</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_3">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>180</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_4">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>210</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_5">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>240</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_6">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>270</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="priority_7">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>300</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>None</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_label">
+     <property name="geometry">
+      <rect>
+       <x>1090</x>
+       <y>50</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Located</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_6">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>270</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_2">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>150</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;
+</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_3">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>180</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_5">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>240</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_1">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>120</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_0">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>90</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_4">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>210</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="located_7">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>300</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>0x000000000000</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1429,7 +1928,7 @@ QMenuBar::item:selected {
      <rect>
       <x>130</x>
       <y>560</y>
-      <width>801</width>
+      <width>1111</width>
       <height>31</height>
      </rect>
     </property>
@@ -1445,7 +1944,7 @@ QMenuBar::item:selected {
      <rect>
       <x>740</x>
       <y>20</y>
-      <width>191</width>
+      <width>501</width>
       <height>181</height>
      </rect>
     </property>
@@ -1455,12 +1954,12 @@ QMenuBar::item:selected {
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="info_label_2">
+    <widget class="QLabel" name="command_label">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>111</width>
+       <width>171</width>
        <height>31</height>
       </rect>
      </property>
@@ -1476,19 +1975,19 @@ QMenuBar::item:selected {
       <string>Commands</string>
      </property>
     </widget>
-    <widget class="QLabel" name="processes_label_2">
+    <widget class="QLabel" name="command_0">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>131</width>
-       <height>21</height>
+       <x>20</x>
+       <y>60</y>
+       <width>101</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>JetBrains Mono</family>
-       <pointsize>10</pointsize>
+       <pointsize>11</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -1500,19 +1999,19 @@ QMenuBar::item:selected {
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
-    <widget class="QLabel" name="processes_label_3">
+    <widget class="QLabel" name="command_1">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>131</width>
+       <x>20</x>
+       <y>80</y>
+       <width>101</width>
        <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>JetBrains Mono</family>
-       <pointsize>10</pointsize>
+       <pointsize>11</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -1524,19 +2023,19 @@ QMenuBar::item:selected {
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
-    <widget class="QLabel" name="processes_label_4">
+    <widget class="QLabel" name="command_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>131</width>
+       <x>20</x>
+       <y>100</y>
+       <width>101</width>
        <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>JetBrains Mono</family>
-       <pointsize>10</pointsize>
+       <pointsize>11</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -1548,19 +2047,19 @@ QMenuBar::item:selected {
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
-    <widget class="QLabel" name="processes_label_5">
+    <widget class="QLabel" name="command_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>131</width>
+       <x>20</x>
+       <y>120</y>
+       <width>101</width>
        <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>JetBrains Mono</family>
-       <pointsize>10</pointsize>
+       <pointsize>11</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -1572,25 +2071,265 @@ QMenuBar::item:selected {
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
-    <widget class="QLabel" name="processes_label_6">
+    <widget class="QLabel" name="command_4">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>130</y>
-       <width>131</width>
+       <x>20</x>
+       <y>140</y>
+       <width>101</width>
        <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>JetBrains Mono</family>
-       <pointsize>10</pointsize>
+       <pointsize>11</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
      <property name="text">
       <string>resume all</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>100</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>rr -quantum</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>80</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>fcfs</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>normal</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_10">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>120</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>restart</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_11">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>140</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>exit</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>120</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>priotiry</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>140</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>queues</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_12">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>pc</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_13">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>80</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>rw</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="command_14">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>100</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>rmemory</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1603,7 +2342,7 @@ QMenuBar::item:selected {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>944</width>
+     <width>1257</width>
      <height>22</height>
     </rect>
    </property>
