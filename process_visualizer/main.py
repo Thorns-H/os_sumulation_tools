@@ -1,6 +1,6 @@
 """
 Seminario de Solución de Problemas de Sistemas Operativos - D05 - 28/09/2023
-Actividad #8 - Concurrencia, el problema de los lectores y escritores.
+Actividad #9 - Administración de memoria real / física.
 Abraham Magaña Hernández - 220791217
 """
 
@@ -15,6 +15,8 @@ from includes.fcfs_thread import *
 from includes.rr_thread import *
 from includes.priority_thread import *
 from includes.queue_thread import *
+
+from includes.mqueues_threads import *
 
 from includes.pc_thread import *
 from includes.rw_thread import *
@@ -288,6 +290,26 @@ class process_manager(QMainWindow):
         thread.update_signal.connect(self.update_process_queues)
         threads.append(thread)
         thread.start()
+
+    def simulate_processes_mqueues(self) -> None:
+
+        for thread in threads:
+            thread.terminate()
+
+        thread = mqueue_thread(self.processes[:3], 'fcfs')
+        threads.append(thread)
+
+        thread = mqueue_thread(self.processes[3:5], 'rr')
+        threads.append(thread)
+
+        thread = mqueue_thread(self.processes[5:], 'srt')
+        threads.append(thread)
+
+        for thread in threads:
+            thread.start()
+
+        for thread in threads:
+            thread.wait()
         
     def update_process_queues(self, index: int, value: int, priority: int) -> None:
         if priority == 0:
@@ -311,6 +333,8 @@ class process_manager(QMainWindow):
         threads.append(thread)
         thread.start()
 
+    # Este método se encarga de simular el problema de los lectores y escritores.
+
     def simulate_rw(self) -> None:
 
         for thread in threads:
@@ -322,6 +346,8 @@ class process_manager(QMainWindow):
         thread.update_signal.connect(self.update_process_thread_fcfs)
         threads.append(thread)
         thread.start()
+
+    # Este método se encarga de simular el alojamiento de memoria real.
 
     def simulate_real_memory(self) -> None:
 
@@ -348,7 +374,7 @@ class process_manager(QMainWindow):
 
         integer_value = False
 
-        if tokens[0] in ('normal', 'fcfs', 'rr', 'priority', 'queues', 'pc', 'rw', 'rmemory', 'restart', 'exit'):
+        if tokens[0] in ('normal', 'fcfs', 'rr', 'priority', 'queues', 'mqueues', 'pc', 'rw', 'rmemory', 'restart', 'exit'):
 
             mode = tokens[0]
 
@@ -362,6 +388,8 @@ class process_manager(QMainWindow):
                 self.simulate_processes_priority()
             elif mode == 'queues':
                 self.simulate_processes_queues()
+            elif mode == 'mqueues':
+                self.simulate_processes_mqueues()
             elif mode == 'pc':
                 self.simulate_pc()
             elif mode == 'rw':
