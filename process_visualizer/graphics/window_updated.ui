@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1257</width>
-    <height>641</height>
+    <width>1362</width>
+    <height>639</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -439,7 +439,7 @@ QMenuBar::item:selected {
      <rect>
       <x>10</x>
       <y>210</y>
-      <width>1231</width>
+      <width>1341</width>
       <height>341</height>
      </rect>
     </property>
@@ -1666,7 +1666,7 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_label">
      <property name="geometry">
       <rect>
-       <x>1090</x>
+       <x>1150</x>
        <y>50</y>
        <width>91</width>
        <height>31</height>
@@ -1687,9 +1687,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_6">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>270</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1705,7 +1705,7 @@ QMenuBar::item:selected {
       <string notr="true">color: red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1714,9 +1714,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_2">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>150</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1733,7 +1733,7 @@ QMenuBar::item:selected {
 </string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1742,9 +1742,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_3">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>180</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1760,7 +1760,7 @@ QMenuBar::item:selected {
       <string notr="true">color: red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1769,9 +1769,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_5">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>240</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1787,7 +1787,7 @@ QMenuBar::item:selected {
       <string notr="true">color: red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1796,9 +1796,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_1">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>120</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1814,7 +1814,7 @@ QMenuBar::item:selected {
       <string notr="true">color: red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1823,9 +1823,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_0">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>90</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1841,7 +1841,7 @@ QMenuBar::item:selected {
       <string notr="true">color:red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1850,9 +1850,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_4">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>210</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1868,7 +1868,7 @@ QMenuBar::item:selected {
       <string notr="true">color: red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1877,9 +1877,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_7">
      <property name="geometry">
       <rect>
-       <x>1060</x>
+       <x>1080</x>
        <y>300</y>
-       <width>141</width>
+       <width>221</width>
        <height>21</height>
       </rect>
      </property>
@@ -1895,7 +1895,7 @@ QMenuBar::item:selected {
       <string notr="true">color: red;</string>
      </property>
      <property name="text">
-      <string>0x000000000000</string>
+      <string>0x000000000000 [0]</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -1928,7 +1928,7 @@ QMenuBar::item:selected {
      <rect>
       <x>130</x>
       <y>560</y>
-      <width>1111</width>
+      <width>1211</width>
       <height>31</height>
      </rect>
     </property>
@@ -1944,7 +1944,7 @@ QMenuBar::item:selected {
      <rect>
       <x>740</x>
       <y>20</y>
-      <width>501</width>
+      <width>611</width>
       <height>181</height>
      </rect>
     </property>
@@ -2342,8 +2342,8 @@ QMenuBar::item:selected {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1257</width>
-     <height>22</height>
+     <width>1362</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
