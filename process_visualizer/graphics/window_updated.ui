@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1362</width>
+    <width>1309</width>
     <height>639</height>
    </rect>
   </property>
@@ -339,7 +339,7 @@ QMenuBar::item:selected {
      <rect>
       <x>410</x>
       <y>20</y>
-      <width>321</width>
+      <width>251</width>
       <height>181</height>
      </rect>
     </property>
@@ -375,7 +375,7 @@ QMenuBar::item:selected {
       <rect>
        <x>40</x>
        <y>60</y>
-       <width>251</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -396,7 +396,7 @@ QMenuBar::item:selected {
       <rect>
        <x>40</x>
        <y>90</y>
-       <width>251</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -417,7 +417,7 @@ QMenuBar::item:selected {
       <rect>
        <x>40</x>
        <y>120</y>
-       <width>251</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -439,7 +439,7 @@ QMenuBar::item:selected {
      <rect>
       <x>10</x>
       <y>210</y>
-      <width>1341</width>
+      <width>1291</width>
       <height>341</height>
      </rect>
     </property>
@@ -1240,7 +1240,7 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="arrive_label">
      <property name="geometry">
       <rect>
-       <x>800</x>
+       <x>780</x>
        <y>50</y>
        <width>91</width>
        <height>31</height>
@@ -1261,9 +1261,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_0">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>90</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1285,9 +1285,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_1">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>120</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1309,9 +1309,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_2">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>150</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1333,9 +1333,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_3">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>180</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1357,9 +1357,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_4">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>210</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1381,9 +1381,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_5">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>240</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1405,9 +1405,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_6">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>270</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1429,9 +1429,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="time_7">
      <property name="geometry">
       <rect>
-       <x>770</x>
+       <x>780</x>
        <y>300</y>
-       <width>141</width>
+       <width>91</width>
        <height>21</height>
       </rect>
      </property>
@@ -1453,9 +1453,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_label">
      <property name="geometry">
       <rect>
-       <x>940</x>
+       <x>890</x>
        <y>50</y>
-       <width>101</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -1474,9 +1474,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_0">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>90</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1498,9 +1498,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_1">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>120</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1522,9 +1522,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_2">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>150</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1546,9 +1546,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_3">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>180</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1570,9 +1570,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_4">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>210</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1594,9 +1594,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_5">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>240</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1618,9 +1618,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_6">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>270</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1642,9 +1642,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="priority_7">
      <property name="geometry">
       <rect>
-       <x>920</x>
+       <x>900</x>
        <y>300</y>
-       <width>141</width>
+       <width>81</width>
        <height>21</height>
       </rect>
      </property>
@@ -1666,7 +1666,7 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_label">
      <property name="geometry">
       <rect>
-       <x>1150</x>
+       <x>1080</x>
        <y>50</y>
        <width>91</width>
        <height>31</height>
@@ -1687,9 +1687,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_6">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>270</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1714,9 +1714,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_2">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>150</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1742,9 +1742,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_3">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>180</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1769,9 +1769,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_5">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>240</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1796,9 +1796,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_1">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>120</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1823,9 +1823,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_0">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>90</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1850,9 +1850,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_4">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>210</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1877,9 +1877,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="located_7">
      <property name="geometry">
       <rect>
-       <x>1080</x>
+       <x>1010</x>
        <y>300</y>
-       <width>221</width>
+       <width>251</width>
        <height>21</height>
       </rect>
      </property>
@@ -1928,7 +1928,7 @@ QMenuBar::item:selected {
      <rect>
       <x>130</x>
       <y>560</y>
-      <width>1211</width>
+      <width>1161</width>
       <height>31</height>
      </rect>
     </property>
@@ -1942,9 +1942,9 @@ QMenuBar::item:selected {
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
      <rect>
-      <x>740</x>
+      <x>880</x>
       <y>20</y>
-      <width>611</width>
+      <width>421</width>
       <height>181</height>
      </rect>
     </property>
@@ -2171,7 +2171,7 @@ QMenuBar::item:selected {
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>120</y>
+       <y>140</y>
        <width>101</width>
        <height>21</height>
       </rect>
@@ -2194,9 +2194,9 @@ QMenuBar::item:selected {
     <widget class="QLabel" name="command_11">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>140</y>
-       <width>101</width>
+       <x>360</x>
+       <y>60</y>
+       <width>41</width>
        <height>21</height>
       </rect>
      </property>
@@ -2335,6 +2335,143 @@ QMenuBar::item:selected {
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
+    <widget class="QLabel" name="command_15">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>120</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>vmemory</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_5">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>201</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="swap_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Swap Area</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="usage_bar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>171</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="total_space">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Total Space: 8GB</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="total_pages">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Virtual Pages: 0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="usage_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>JetBrains Mono</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Using: 0GB</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -2342,7 +2479,7 @@ QMenuBar::item:selected {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1362</width>
+     <width>1309</width>
      <height>21</height>
     </rect>
    </property>

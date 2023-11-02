@@ -22,6 +22,7 @@ from includes.pc_thread import *
 from includes.rw_thread import *
 
 from includes.real_memory_thread import *
+from includes.virtual_memory_thread import *
 
 import random
 import sys
@@ -60,6 +61,8 @@ class process_manager(QMainWindow):
             [self.token_6, self.user_6, self.state_6, self.progress_6, self.time_6, self.priority_6, self.located_6],
             [self.token_7, self.user_7, self.state_7, self.progress_7, self.time_7, self.priority_7, self.located_7]
         ]
+
+        self.swap_frame = (self.swap_label, self.total_pages, self.total_space, self.usage_label, self.usage_bar)
 
         self.numbers: list = [int]
         self.times: list = [int]
@@ -362,6 +365,19 @@ class process_manager(QMainWindow):
 
         thread.start()
 
+    def simulate_virtual_memory(self) -> None:
+
+        for thread in threads:
+            thread.terminate()
+
+        self.processes = sorted(self.processes, key = lambda time: int(time[4].text()))
+
+        thread = virtual_memory_thread(self.processes, self.swap_frame)
+        thread.update_signal.connect(self.update_process_thread_fcfs) 
+        threads.append(thread)
+
+        thread.start()
+
     """
     Este apartado es para el funcionamiento del prompt, donde ingresamos los comandos para interactuar con los procesos,
     por ende, es donde estan los métodos encargados de terminar, pausar y reanudar los threads.
@@ -374,7 +390,7 @@ class process_manager(QMainWindow):
 
         integer_value = False
 
-        if tokens[0] in ('normal', 'fcfs', 'rr', 'priority', 'queues', 'mqueues', 'pc', 'rw', 'rmemory', 'restart', 'exit'):
+        if tokens[0] in ('normal', 'fcfs', 'rr', 'priority', 'queues', 'mqueues', 'pc', 'rw', 'rmemory', 'vmemory', 'restart', 'exit'):
 
             mode = tokens[0]
 
@@ -396,6 +412,8 @@ class process_manager(QMainWindow):
                 self.simulate_rw()
             elif mode == 'rmemory':
                 self.simulate_real_memory()
+            elif mode == 'vmemory':
+                self.simulate_virtual_memory()
             elif mode == 'restart':
                 restart_application()
             elif mode == 'exit':

@@ -7,13 +7,14 @@ import math
 threads = []
 normal_threads = []
 
-class real_memory_thread(QThread):
+class virtual_memory_thread(QThread):
 
     update_signal = pyqtSignal(int, int)
 
-    def __init__(self, processes: tuple) -> None:
+    def __init__(self, processes: tuple, swap_frame: tuple) -> None:
         super().__init__()
         self.processes = processes
+        self.swap_frame = swap_frame
 
     def run(self) -> None:
 
@@ -26,10 +27,11 @@ class real_memory_thread(QThread):
             state.setText('Allocating...')
             state.setStyleSheet('color: lime;')
 
-            process_size = random.randint(8, 96)
+            random_kb = random.randint(1000, 16000)
+            process_size = random_kb * 1024
             blocks = math.ceil(process_size / 8)
 
-            memory_location.setText(f'{hex(memory_index + process_size)} [{process_size}b - {blocks}]')
+            memory_location.setText(f'{hex(memory_index + process_size)} [{random_kb}kb - {blocks}]')
             memory_location.setStyleSheet('color: lime;')
 
             for i in range (1, 101):
