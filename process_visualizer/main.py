@@ -1,6 +1,6 @@
 """
 Seminario de Solución de Problemas de Sistemas Operativos - D05 - 28/09/2023
-Actividad #9 - Administración de memoria real / física.
+Actividad #10 - Administración de memoria virtual.
 Abraham Magaña Hernández - 220791217
 """
 
@@ -62,7 +62,9 @@ class process_manager(QMainWindow):
             [self.token_7, self.user_7, self.state_7, self.progress_7, self.time_7, self.priority_7, self.located_7]
         ]
 
-        self.swap_frame = (self.swap_label, self.total_pages, self.total_space, self.usage_label, self.usage_bar)
+        self.swap_frame = (self.swap_label, self.total_space, self.total_pages, self.usage_label, self.usage_bar)
+
+        self.memory_frame = (self.memory_label, self.total_memory, self.total_blocks, self.total_size, self.memory_usage)
 
         self.numbers: list = [int]
         self.times: list = [int]
@@ -359,8 +361,9 @@ class process_manager(QMainWindow):
 
         self.processes = sorted(self.processes, key = lambda time: int(time[4].text()))
 
-        thread = real_memory_thread(self.processes)
+        thread = real_memory_thread(self.processes, self.memory_frame)
         thread.update_signal.connect(self.update_process_thread_fcfs) 
+        thread.update_memory.connect(self.update_memory_usage)
         threads.append(thread)
 
         thread.start()
@@ -372,11 +375,19 @@ class process_manager(QMainWindow):
 
         self.processes = sorted(self.processes, key = lambda time: int(time[4].text()))
 
-        thread = virtual_memory_thread(self.processes, self.swap_frame)
-        thread.update_signal.connect(self.update_process_thread_fcfs) 
+        thread = virtual_memory_thread(self.processes, self.memory_frame, self.swap_frame)
+        thread.update_signal.connect(self.update_process_thread_fcfs)
+        thread.update_memory.connect(self.update_memory_usage)
+        thread.update_vmemory.connect(self.update_virtual_memory_usage)
         threads.append(thread)
 
         thread.start()
+
+    def update_memory_usage(self, value: int) -> None:
+        self.memory_frame[4].setValue(value)
+
+    def update_virtual_memory_usage(self, value: int) -> None:
+        self.swap_frame[4].setValue(value)
 
     """
     Este apartado es para el funcionamiento del prompt, donde ingresamos los comandos para interactuar con los procesos,
