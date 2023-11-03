@@ -18,7 +18,7 @@ These programs are made and tested in Linux, I have not checked the portability 
 
 ## Preview
 <p align="center">
-  <img src="https://i.ibb.co/1TXRsJB/new.png"/>
+  <img src="https://i.ibb.co/XJtDcxj/image.png"/>
 </p>
 
 **ⓘ Important:** <br />
