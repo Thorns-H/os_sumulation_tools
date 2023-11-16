@@ -1,6 +1,6 @@
 """
-Seminario de Solución de Problemas de Sistemas Operativos - D05 - 28/09/2023
-Actividad #10 - Administración de memoria virtual.
+Seminario de Solución de Problemas de Sistemas Operativos - D05 - 16/11/2023
+Actividad #11 - Dispositivos de entrada y salida.
 Abraham Magaña Hernández - 220791217
 """
 
@@ -23,6 +23,7 @@ from includes.rw_thread import *
 
 from includes.real_memory_thread import *
 from includes.virtual_memory_thread import *
+from includes.devices_threads import *
 
 import random
 import sys
@@ -32,6 +33,43 @@ import os
 Esta es la clase principal de la ventana donde se muestran los procesos, a lo largo del codigo se va a documentar esta
 misma clase pero en secciones, para entenderse mejor.
 """
+
+class devices_list(QMainWindow):
+    
+    def __init__(self) -> None:
+        super(devices_list, self).__init__()
+        uic.loadUi('graphics/devices_list.ui', self) # Cargamos la interfaz hecha en QtDesigner.
+        self.setWindowTitle('Current Devices - Abraham Magaña Hernández')
+        self.setFixedSize(self.size())
+
+        input_devices = ['Keyboard', 'Mouse', 'Graphics tablet', 'Webcam', 'Microphone']
+        output_devices = ['Monitor', 'Speakers', 'Headphones', 'Printer']
+
+        self.devices = (
+            (self.device_name_0, self.device_type_0, self.memory_address_0),
+            (self.device_name_1, self.device_type_1, self.memory_address_1),
+            (self.device_name_2, self.device_type_2, self.memory_address_2),
+            (self.device_name_3, self.device_type_3, self.memory_address_3),
+            (self.device_name_4, self.device_type_4, self.memory_address_4),
+            (self.device_name_5, self.device_type_5, self.memory_address_5)
+        )
+
+        for i, device in enumerate(self.devices):
+
+            all_devices = input_devices + output_devices
+
+            device_name = random.choice(all_devices)
+
+            device[0].setText(f'Device name: {device_name}')
+
+            if device_name in input_devices:
+                device[1].setText('Type: Input')
+                input_devices.remove(device_name)
+            elif device_name in output_devices:
+                device[1].setText('Type: Output')
+                output_devices.remove(device_name)
+
+            device[2].setText(hex(id(self) + (i * 8)))
 
 class process_manager(QMainWindow):
 
@@ -66,6 +104,10 @@ class process_manager(QMainWindow):
 
         self.memory_frame = (self.memory_label, self.total_memory, self.total_blocks, self.total_size, self.memory_usage)
 
+        self.devices_frame = (self.device_status, self.devices_usage)
+
+        self.devices_window = devices_list()
+
         self.numbers: list = [int]
         self.times: list = [int]
             
@@ -95,9 +137,16 @@ class process_manager(QMainWindow):
 
         self.prompt.returnPressed.connect(self.get_command)
 
+        # Conexiones de botones.
+
+        self.show_devices.clicked.connect(self.list_devices)
+
     def initialize_bars(self) -> None:
         for process in self.processes:
             process[3].setValue(0)
+
+    def list_devices(self) -> None:
+        self.devices_window.show()
 
     """
     Este apartado es para los métodos encargados del primer frame de la interfaz gráfica, es decir, el frame que contiene,
@@ -389,6 +438,28 @@ class process_manager(QMainWindow):
     def update_virtual_memory_usage(self, value: int) -> None:
         self.swap_frame[4].setValue(value)
 
+    def simulate_devices(self) -> None:
+
+        for thread in threads:
+            thread.terminate()
+
+        self.processes = sorted(self.processes, key = lambda time: int(time[4].text()))
+
+        thread = devices_thread(self.processes, self.memory_frame, self.swap_frame, self.devices_frame)
+        thread.update_signal.connect(self.update_process_thread_fcfs)
+        thread.update_memory.connect(self.update_memory_usage)
+        thread.update_vmemory.connect(self.update_virtual_memory_usage)
+        thread.update_devices.connect(self.update_devices_usage)
+        threads.append(thread)
+
+        thread.start()
+
+        if self.devices_window.isVisible():
+            self.devices_window.close()
+
+    def update_devices_usage(self, value: int) -> None:
+        self.devices_frame[1].setValue(value)
+
     """
     Este apartado es para el funcionamiento del prompt, donde ingresamos los comandos para interactuar con los procesos,
     por ende, es donde estan los métodos encargados de terminar, pausar y reanudar los threads.
@@ -401,7 +472,7 @@ class process_manager(QMainWindow):
 
         integer_value = False
 
-        if tokens[0] in ('normal', 'fcfs', 'rr', 'priority', 'queues', 'mqueues', 'pc', 'rw', 'rmemory', 'vmemory', 'restart', 'exit'):
+        if tokens[0] in ('normal', 'fcfs', 'rr', 'priority', 'queues', 'mqueues', 'pc', 'rw', 'rmemory', 'vmemory', 'devices', 'restart', 'exit'):
 
             mode = tokens[0]
 
@@ -425,6 +496,8 @@ class process_manager(QMainWindow):
                 self.simulate_real_memory()
             elif mode == 'vmemory':
                 self.simulate_virtual_memory()
+            elif mode == 'devices':
+                self.simulate_devices()
             elif mode == 'restart':
                 restart_application()
             elif mode == 'exit':

@@ -6,13 +6,14 @@ import math
 
 threads = []
 
-class virtual_memory_thread(QThread):
+class devices_thread(QThread):
 
     update_signal = pyqtSignal(int, int)
     update_memory = pyqtSignal(int)
     update_vmemory = pyqtSignal(int)
+    update_devices = pyqtSignal(int)
 
-    def __init__(self, processes: tuple, memory_frame: tuple, swap_frame: tuple) -> None:
+    def __init__(self, processes: tuple, memory_frame: tuple, swap_frame: tuple, devices_frame: tuple) -> None:
         super().__init__()
         self.processes = processes
         self.total_memory = memory_frame[1]
@@ -23,6 +24,8 @@ class virtual_memory_thread(QThread):
         self.total_pages = swap_frame[2]
         self.total_vsize = swap_frame[3]
 
+        self.device_status = devices_frame[0]
+
     def run(self) -> None:
 
         memory_index = id(self)
@@ -30,6 +33,9 @@ class virtual_memory_thread(QThread):
         for index, process in enumerate(self.processes):
 
             state, progress_bar, memory_location = process[2], process[3], process[6]
+
+            self.device_status.setText('Status: Protected')
+            self.update_devices.emit(random.randint(10, 30))
 
             state.setText('Allocating...')
             state.setStyleSheet('color: lime;')
@@ -95,3 +101,6 @@ class virtual_memory_thread(QThread):
             memory_location.setStyleSheet('color: red;')
 
             memory_index = memory_index + blocks
+
+        self.device_status.setText('Status: Not Found')
+        self.update_devices.emit(0)
